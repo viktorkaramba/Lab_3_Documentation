@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['addfilter_790',['addFilter',['../classdoctest_1_1_context.html#a60ad57a46c19db2b142468c3acac448a',1,'doctest::Context']]],
-  ['any_5ft_791',['any_t',['../structdoctest_1_1detail_1_1has__insertion__operator__impl_1_1any__t.html#a253f4ce5a749ffd79ae9b1c68914e69b',1,'doctest::detail::has_insertion_operator_impl::any_t']]],
-  ['applycommandline_792',['applyCommandLine',['../classdoctest_1_1_context.html#ad55229220bf9ca74e6e0c6323bf672e1',1,'doctest::Context']]],
-  ['approx_793',['Approx',['../classdoctest_1_1_approx.html#a86f0d1b44c1cf095697f23ccdab00802',1,'doctest::Approx']]],
-  ['assertstring_794',['assertString',['../namespacedoctest.html#aa51be8558a5ec9675a77d2ecbc08e663',1,'doctest']]]
+  ['getcount_5fof_5fcolumns_129',['GetCount_Of_Columns',['../class_matrix.html#a7d03b07a055341c11e57f6baf1a20ff0',1,'Matrix']]],
+  ['getcount_5fof_5frows_130',['GetCount_Of_Rows',['../class_matrix.html#ae27569d6ab492fd27c7b740ae98dab87',1,'Matrix']]],
+  ['getdata_131',['GetData',['../class_matrix.html#a4f08d90a1c22b5ce6819190c7483ab83',1,'Matrix']]],
+  ['geterror_132',['getError',['../class_matrix_exception.html#a83d2c2b4a9e84b17a571f5863ecbff0d',1,'MatrixException::getError()'],['../class_multithreaded___version_exception.html#ae93353d8483b703b1d9ef616d16cc22c',1,'Multithreaded_VersionException::getError()'],['../class_serial___version_exception.html#acd407113bf31da0e1ac00f95c50befdb',1,'Serial_VersionException::getError()']]],
+  ['getresult_133',['GetResult',['../class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06',1,'Simple_Timer']]]
 ];

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_multithreaded___version_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,24 +80,19 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_da90a7a58cb733f0ea2da66450312edc.html">guwevfwbf&#39;</a></li><li class="navelem"><a class="el" href="dir_eb50d4e496f4002b76e3d6db4fc6c0df.html">2-курс</a></li><li class="navelem"><a class="el" href="dir_bb5f6a9628b67ad7315d408170be6659.html">2-семестр</a></li><li class="navelem"><a class="el" href="dir_0abdb0b8bab94a1cbdabae437aab3615.html">ООП</a></li><li class="navelem"><a class="el" href="dir_629f1a07f8b06e4f34c6a844bae98c0f.html">Лаба 2 семестр</a></li><li class="navelem"><a class="el" href="dir_91fd538098928896df68c1a377cfefdf.html">Лаба 3</a></li><li class="navelem"><a class="el" href="dir_887c3599819f81f13421a2f73fd2321f.html">Lab_3-Multithreaded-programming-</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Multithreaded_Version.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_multithreaded___version_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MULTITHREADED_VERSION_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MULTITHREADED_VERSION_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _MULTITHREADED_VERSION_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">Matrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Matrix.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_algorithm___strassen_8h.html">Algorithm_Strassen.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Algorithm_Strassen.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
@@ -108,12 +124,9 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_multithreaded___version_8cpp.html">Multithreaded_Version.cpp</a>&quot;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;Multithreaded_Version.cpp&quot;</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="ttc" id="a_algorithm___strassen_8h_html"><div class="ttname"><a href="_algorithm___strassen_8h.html">Algorithm_Strassen.h</a></div></div>
-<div class="ttc" id="a_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div></div>
-<div class="ttc" id="a_multithreaded___version_8cpp_html"><div class="ttname"><a href="_multithreaded___version_8cpp.html">Multithreaded_Version.cpp</a></div></div>
 <div class="ttc" id="aclass_algorithm___strassen_html"><div class="ttname"><a href="class_algorithm___strassen.html">Algorithm_Strassen</a></div><div class="ttdef"><b>Definition:</b> Algorithm_Strassen.h:9</div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition:</b> Matrix.h:10</div></div>
 <div class="ttc" id="aclass_multithreaded___version_exception_html"><div class="ttname"><a href="class_multithreaded___version_exception.html">Multithreaded_VersionException</a></div><div class="ttdef"><b>Definition:</b> Multithreaded_Version.h:38</div></div>
@@ -124,9 +137,13 @@ $(function() {
 <div class="ttc" id="aclass_multithreaded___version_html_a99866f6ca8e2bcf6e97b10ed1d500f34"><div class="ttname"><a href="class_multithreaded___version.html#a99866f6ca8e2bcf6e97b10ed1d500f34">Multithreaded_Version::strassenR</a></div><div class="ttdeci">void strassenR(Matrix&lt; T &gt; &amp;A, Matrix&lt; T &gt; &amp;B, Matrix&lt; T &gt; &amp;C, int n) override</div><div class="ttdef"><b>Definition:</b> Multithreaded_Version.cpp:10</div></div>
 <div class="ttc" id="aclass_multithreaded___version_html_ac3f0d10447965061d36fd3ac3ed0559e"><div class="ttname"><a href="class_multithreaded___version.html#ac3f0d10447965061d36fd3ac3ed0559e">Multithreaded_Version::subtract</a></div><div class="ttdeci">void subtract(Matrix&lt; T &gt; &amp;A, Matrix&lt; T &gt; &amp;B, Matrix&lt; T &gt; &amp;C, int n) override</div><div class="ttdef"><b>Definition:</b> Multithreaded_Version.cpp:196</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_da90a7a58cb733f0ea2da66450312edc.html">guwevfwbf&#39;</a></li><li class="navelem"><a class="el" href="dir_eb50d4e496f4002b76e3d6db4fc6c0df.html">2-курс</a></li><li class="navelem"><a class="el" href="dir_bb5f6a9628b67ad7315d408170be6659.html">2-семестр</a></li><li class="navelem"><a class="el" href="dir_0abdb0b8bab94a1cbdabae437aab3615.html">ООП</a></li><li class="navelem"><a class="el" href="dir_629f1a07f8b06e4f34c6a844bae98c0f.html">Лаба 2 семестр</a></li><li class="navelem"><a class="el" href="dir_91fd538098928896df68c1a377cfefdf.html">Лаба 3</a></li><li class="navelem"><a class="el" href="dir_887c3599819f81f13421a2f73fd2321f.html">Lab_3-Multithreaded-programming-</a></li><li class="navelem"><b>Multithreaded_Version.h</b></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

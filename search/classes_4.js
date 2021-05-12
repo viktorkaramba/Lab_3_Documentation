@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['exceptiontranslator_723',['ExceptionTranslator',['../classdoctest_1_1detail_1_1_exception_translator.html',1,'doctest::detail']]],
-  ['expressiondecomposer_724',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1_expression_decomposer.html',1,'doctest::detail']]]
+  ['exceptiontranslator_85',['ExceptionTranslator',['../classdoctest_1_1detail_1_1_exception_translator.html',1,'doctest::detail']]],
+  ['expressiondecomposer_86',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1_expression_decomposer.html',1,'doctest::detail']]]
 ];
