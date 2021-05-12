@@ -69,22 +69,22 @@ $(function() {
 <div class="title">Tests.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="_tests_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Algorithm_Strassen.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Serial_Version.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Multithreaded_Version.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Simple_Timer.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_algorithm___strassen_8h.html">Algorithm_Strassen.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_serial___version_8h.html">Serial_Version.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_multithreaded___version_8h.html">Multithreaded_Version.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simple___timer_8h.html">Simple_Timer.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">const</span> std::vector&lt;int&gt; count_row = {3,5,10,15,20,30,40,50};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;std::vector&lt;std::vector&lt;int&gt;&gt; Additional[8];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; Product1;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; Product2;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">   12</a></span>&#160;<span class="keyword">const</span> std::vector&lt;int&gt; <a class="code" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a> = {3,5,10,15,20,30,40,50};</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_tests_8h.html#a1096b153e3f5c5772358090b05d31519">   14</a></span>&#160;std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="_tests_8h.html#a1096b153e3f5c5772358090b05d31519">Additional</a>[8];</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_tests_8h.html#a00265a5b5c1e5bc8f7e330f69932a897">   16</a></span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; <a class="code" href="_tests_8h.html#a00265a5b5c1e5bc8f7e330f69932a897">Product1</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_tests_8h.html#ab04282f9aa91babaed2a8ad6b9fdc3ff">   18</a></span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; <a class="code" href="_tests_8h.html#ab04282f9aa91babaed2a8ad6b9fdc3ff">Product2</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;std::vector&lt;std::vector&lt;int&gt;&gt; createMatrix(<span class="keywordtype">int</span> rows) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_tests_8h.html#a5eddc08a183233ba041575abef1fe778">   21</a></span>&#160;std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="_tests_8h.html#a5eddc08a183233ba041575abef1fe778">createMatrix</a>(<span class="keywordtype">int</span> rows) {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    srand(time(NULL));</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> row1 = rows;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; A1;</div>
@@ -102,33 +102,45 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> A1;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; Tests_Matrix() {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_tests_8h.html#ad172bf2ea96bbcefc8cdbc5f22fd1322">   40</a></span>&#160;std::vector&lt;Matrix&lt;int&gt;&gt; <a class="code" href="_tests_8h.html#ad172bf2ea96bbcefc8cdbc5f22fd1322">Tests_Matrix</a>() {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> *M1 = <span class="keyword">new</span> <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a>[8];</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; A1[8];</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 8; i++){</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        A1[i] = createMatrix(count_row[i]);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        Additional[i] = createMatrix(count_row[i]);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        M1[i].<a class="code" href="class_matrix.html#a4936bc8b660bce17dbe671886928b776">SetCount_Of_Row_Columns</a>(count_row[i], count_row[i]);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        A1[i] = <a class="code" href="_tests_8h.html#a5eddc08a183233ba041575abef1fe778">createMatrix</a>(<a class="code" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a>[i]);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="_tests_8h.html#a1096b153e3f5c5772358090b05d31519">Additional</a>[i] = <a class="code" href="_tests_8h.html#a5eddc08a183233ba041575abef1fe778">createMatrix</a>(<a class="code" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a>[i]);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        M1[i].<a class="code" href="class_matrix.html#a4936bc8b660bce17dbe671886928b776">SetCount_Of_Row_Columns</a>(<a class="code" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a>[i], <a class="code" href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a>[i]);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        M1[i].<a class="code" href="class_matrix.html#a66206bf1231a51514934782e20bc5213">SetData</a>(A1[i]);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        vecMatrix.push_back(M1[i]);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> vecMatrix;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> The_Product_Of_Matrices_Serial(<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a>  A, <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> B,  <span class="keywordtype">int</span> row) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_tests_8h.html#a104f65b969298ac17b843234132f201a">   55</a></span>&#160;<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> <a class="code" href="_tests_8h.html#a104f65b969298ac17b843234132f201a">The_Product_Of_Matrices_Serial</a>(<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a>  A, <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> B,  <span class="keywordtype">int</span> row) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> C(row,row);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_algorithm___strassen.html">Algorithm_Strassen&lt;int&gt;</a>* product = <span class="keyword">new</span> <a class="code" href="class_serial___version.html">Serial_Version&lt;int&gt;</a>(A,B,C,row);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Product1.push_back(C);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="_tests_8h.html#a00265a5b5c1e5bc8f7e330f69932a897">Product1</a>.push_back(C);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> C;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> The_Product_Of_Matrices_Multithreaded_Version(<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a>  A, <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> B,  <span class="keywordtype">int</span> row) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="_tests_8h.html#ac56b2cdad93caf9dc20ad67b39603cda">   63</a></span>&#160;<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> <a class="code" href="_tests_8h.html#ac56b2cdad93caf9dc20ad67b39603cda">The_Product_Of_Matrices_Multithreaded_Version</a>(<a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a>  A, <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> B,  <span class="keywordtype">int</span> row) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_matrix.html">Matrix&lt;int&gt;</a> C(row,row);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_algorithm___strassen.html">Algorithm_Strassen&lt;int&gt;</a>* product = <span class="keyword">new</span> <a class="code" href="class_multithreaded___version.html">Multithreaded_Version&lt;int&gt;</a>(A,B,C,row);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Product2.push_back(C);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="_tests_8h.html#ab04282f9aa91babaed2a8ad6b9fdc3ff">Product2</a>.push_back(C);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> C;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="ttc" id="a_algorithm___strassen_8h_html"><div class="ttname"><a href="_algorithm___strassen_8h.html">Algorithm_Strassen.h</a></div></div>
+<div class="ttc" id="a_multithreaded___version_8h_html"><div class="ttname"><a href="_multithreaded___version_8h.html">Multithreaded_Version.h</a></div></div>
+<div class="ttc" id="a_serial___version_8h_html"><div class="ttname"><a href="_serial___version_8h.html">Serial_Version.h</a></div></div>
+<div class="ttc" id="a_simple___timer_8h_html"><div class="ttname"><a href="_simple___timer_8h.html">Simple_Timer.h</a></div></div>
+<div class="ttc" id="a_tests_8h_html_a00265a5b5c1e5bc8f7e330f69932a897"><div class="ttname"><a href="_tests_8h.html#a00265a5b5c1e5bc8f7e330f69932a897">Product1</a></div><div class="ttdeci">std::vector&lt; Matrix&lt; int &gt; &gt; Product1</div><div class="ttdef"><b>Definition:</b> Tests.h:16</div></div>
+<div class="ttc" id="a_tests_8h_html_a05e410b9a322b34156ab6d097f8c8490"><div class="ttname"><a href="_tests_8h.html#a05e410b9a322b34156ab6d097f8c8490">count_row</a></div><div class="ttdeci">const std::vector&lt; int &gt; count_row</div><div class="ttdef"><b>Definition:</b> Tests.h:12</div></div>
+<div class="ttc" id="a_tests_8h_html_a104f65b969298ac17b843234132f201a"><div class="ttname"><a href="_tests_8h.html#a104f65b969298ac17b843234132f201a">The_Product_Of_Matrices_Serial</a></div><div class="ttdeci">Matrix&lt; int &gt; The_Product_Of_Matrices_Serial(Matrix&lt; int &gt; A, Matrix&lt; int &gt; B, int row)</div><div class="ttdef"><b>Definition:</b> Tests.h:55</div></div>
+<div class="ttc" id="a_tests_8h_html_a1096b153e3f5c5772358090b05d31519"><div class="ttname"><a href="_tests_8h.html#a1096b153e3f5c5772358090b05d31519">Additional</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; Additional[8]</div><div class="ttdef"><b>Definition:</b> Tests.h:14</div></div>
+<div class="ttc" id="a_tests_8h_html_a5eddc08a183233ba041575abef1fe778"><div class="ttname"><a href="_tests_8h.html#a5eddc08a183233ba041575abef1fe778">createMatrix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; createMatrix(int rows)</div><div class="ttdef"><b>Definition:</b> Tests.h:21</div></div>
+<div class="ttc" id="a_tests_8h_html_ab04282f9aa91babaed2a8ad6b9fdc3ff"><div class="ttname"><a href="_tests_8h.html#ab04282f9aa91babaed2a8ad6b9fdc3ff">Product2</a></div><div class="ttdeci">std::vector&lt; Matrix&lt; int &gt; &gt; Product2</div><div class="ttdef"><b>Definition:</b> Tests.h:18</div></div>
+<div class="ttc" id="a_tests_8h_html_ac56b2cdad93caf9dc20ad67b39603cda"><div class="ttname"><a href="_tests_8h.html#ac56b2cdad93caf9dc20ad67b39603cda">The_Product_Of_Matrices_Multithreaded_Version</a></div><div class="ttdeci">Matrix&lt; int &gt; The_Product_Of_Matrices_Multithreaded_Version(Matrix&lt; int &gt; A, Matrix&lt; int &gt; B, int row)</div><div class="ttdef"><b>Definition:</b> Tests.h:63</div></div>
+<div class="ttc" id="a_tests_8h_html_ad172bf2ea96bbcefc8cdbc5f22fd1322"><div class="ttname"><a href="_tests_8h.html#ad172bf2ea96bbcefc8cdbc5f22fd1322">Tests_Matrix</a></div><div class="ttdeci">std::vector&lt; Matrix&lt; int &gt; &gt; Tests_Matrix()</div><div class="ttdef"><b>Definition:</b> Tests.h:40</div></div>
 <div class="ttc" id="aclass_algorithm___strassen_html"><div class="ttname"><a href="class_algorithm___strassen.html">Algorithm_Strassen</a></div><div class="ttdef"><b>Definition:</b> Algorithm_Strassen.h:9</div></div>
 <div class="ttc" id="aclass_matrix_html"><div class="ttname"><a href="class_matrix.html">Matrix</a></div><div class="ttdef"><b>Definition:</b> Matrix.h:10</div></div>
 <div class="ttc" id="aclass_matrix_html_a4936bc8b660bce17dbe671886928b776"><div class="ttname"><a href="class_matrix.html#a4936bc8b660bce17dbe671886928b776">Matrix::SetCount_Of_Row_Columns</a></div><div class="ttdeci">void SetCount_Of_Row_Columns(int row, int column)</div><div class="ttdef"><b>Definition:</b> Matrix.cpp:64</div></div>

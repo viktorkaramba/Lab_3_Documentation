@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7esimple_5ftimer_151',['~Simple_Timer',['../class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e',1,'Simple_Timer']]]
+  ['failed_5fout_5fof_5fa_5ftesting_5fcontext_815',['failed_out_of_a_testing_context',['../namespacedoctest_1_1detail.html#a0ff832be68bf666d856aefd539e1ce81',1,'doctest::detail']]],
+  ['failurestring_816',['failureString',['../namespacedoctest.html#a9d2d487c802fb0e66172a0ed2c9f76db',1,'doctest']]]
 ];
