@@ -1,0 +1,142 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix$<$ T $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_a9d567e3a121b1be0c3f9c461cab524fe}{Matrix}} ()
+\item 
+\mbox{\hyperlink{class_matrix_a0c64f9042c3b4c558dfb5cdd0e3d3856}{Matrix}} (int cofr, int cofc)
+\item 
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \mbox{\hyperlink{class_matrix_a4f08d90a1c22b5ce6819190c7483ab83}{Get\+Data}} ()
+\item 
+int \mbox{\hyperlink{class_matrix_ae27569d6ab492fd27c7b740ae98dab87}{Get\+Count\+\_\+\+Of\+\_\+\+Rows}} ()
+\item 
+int \mbox{\hyperlink{class_matrix_a7d03b07a055341c11e57f6baf1a20ff0}{Get\+Count\+\_\+\+Of\+\_\+\+Columns}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_ac2a4784ef4399a429cba1095ecb8d9b1}{Set\+Count\+\_\+\+Of\+\_\+\+Rows}} (int row)
+\item 
+void \mbox{\hyperlink{class_matrix_a83b5c06070225c5acd3cff7343b1d2a1}{Set\+Count\+\_\+\+Of\+\_\+\+Columns}} (int column)
+\item 
+void \mbox{\hyperlink{class_matrix_a4936bc8b660bce17dbe671886928b776}{Set\+Count\+\_\+\+Of\+\_\+\+Row\+\_\+\+Columns}} (int row, int column)
+\item 
+void \mbox{\hyperlink{class_matrix_a66206bf1231a51514934782e20bc5213}{Set\+Data}} (std\+::vector$<$ std\+::vector$<$ T $>$$>$ data\+\_\+)
+\item 
+void \mbox{\hyperlink{class_matrix_a8332421c1003a8a61a5c9f3a2f270d5f}{Print}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_a93b0d073d802a4031a1572b91fe93fb0}{Set\+Element}} (const T \&d, int row, int column)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 $>$ }\\std\+::istream \& \mbox{\hyperlink{class_matrix_a298e813bc3258c692e6aa69c2f68ee99}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T1 $>$ \&A)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Matrix$<$ T $>$}
+
+Template class for matrix representation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_a9d567e3a121b1be0c3f9c461cab524fe}\label{class_matrix_a9d567e3a121b1be0c3f9c461cab524fe}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}}}
+
+A constructor that does not accept input parameters \mbox{\Hypertarget{class_matrix_a0c64f9042c3b4c558dfb5cdd0e3d3856}\label{class_matrix_a0c64f9042c3b4c558dfb5cdd0e3d3856}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{int}]{cofr,  }\item[{int}]{cofc }\end{DoxyParamCaption})}
+
+A constructor that accepts two parameters 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_a7d03b07a055341c11e57f6baf1a20ff0}\label{class_matrix_a7d03b07a055341c11e57f6baf1a20ff0}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!GetCount\_Of\_Columns@{GetCount\_Of\_Columns}}
+\index{GetCount\_Of\_Columns@{GetCount\_Of\_Columns}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetCount\_Of\_Columns()}{GetCount\_Of\_Columns()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Get\+Count\+\_\+\+Of\+\_\+\+Columns}
+
+Method for obtaining count of columns from the matrix \mbox{\Hypertarget{class_matrix_ae27569d6ab492fd27c7b740ae98dab87}\label{class_matrix_ae27569d6ab492fd27c7b740ae98dab87}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!GetCount\_Of\_Rows@{GetCount\_Of\_Rows}}
+\index{GetCount\_Of\_Rows@{GetCount\_Of\_Rows}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetCount\_Of\_Rows()}{GetCount\_Of\_Rows()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Get\+Count\+\_\+\+Of\+\_\+\+Rows}
+
+Method for obtaining count of rows from the matrix \mbox{\Hypertarget{class_matrix_a4f08d90a1c22b5ce6819190c7483ab83}\label{class_matrix_a4f08d90a1c22b5ce6819190c7483ab83}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!GetData@{GetData}}
+\index{GetData@{GetData}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Get\+Data}
+
+Method for obtaining data from the matrix \mbox{\Hypertarget{class_matrix_a8332421c1003a8a61a5c9f3a2f270d5f}\label{class_matrix_a8332421c1003a8a61a5c9f3a2f270d5f}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!Print@{Print}}
+\index{Print@{Print}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Print}
+
+Method for outputting the matrix to the console \mbox{\Hypertarget{class_matrix_a83b5c06070225c5acd3cff7343b1d2a1}\label{class_matrix_a83b5c06070225c5acd3cff7343b1d2a1}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!SetCount\_Of\_Columns@{SetCount\_Of\_Columns}}
+\index{SetCount\_Of\_Columns@{SetCount\_Of\_Columns}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetCount\_Of\_Columns()}{SetCount\_Of\_Columns()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Set\+Count\+\_\+\+Of\+\_\+\+Columns (\begin{DoxyParamCaption}\item[{int}]{column }\end{DoxyParamCaption})}
+
+Method for inserting the number of columns in a matrix \mbox{\Hypertarget{class_matrix_a4936bc8b660bce17dbe671886928b776}\label{class_matrix_a4936bc8b660bce17dbe671886928b776}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!SetCount\_Of\_Row\_Columns@{SetCount\_Of\_Row\_Columns}}
+\index{SetCount\_Of\_Row\_Columns@{SetCount\_Of\_Row\_Columns}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetCount\_Of\_Row\_Columns()}{SetCount\_Of\_Row\_Columns()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Set\+Count\+\_\+\+Of\+\_\+\+Row\+\_\+\+Columns (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+Method for inserting the number of rows and columns in a matrix \mbox{\Hypertarget{class_matrix_ac2a4784ef4399a429cba1095ecb8d9b1}\label{class_matrix_ac2a4784ef4399a429cba1095ecb8d9b1}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!SetCount\_Of\_Rows@{SetCount\_Of\_Rows}}
+\index{SetCount\_Of\_Rows@{SetCount\_Of\_Rows}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetCount\_Of\_Rows()}{SetCount\_Of\_Rows()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Set\+Count\+\_\+\+Of\+\_\+\+Rows (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+Method for inserting the number of rows in a matrix \mbox{\Hypertarget{class_matrix_a66206bf1231a51514934782e20bc5213}\label{class_matrix_a66206bf1231a51514934782e20bc5213}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!SetData@{SetData}}
+\index{SetData@{SetData}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Set\+Data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ T $>$$>$}]{data\+\_\+ }\end{DoxyParamCaption})}
+
+Method for inserting data in a matrix \mbox{\Hypertarget{class_matrix_a93b0d073d802a4031a1572b91fe93fb0}\label{class_matrix_a93b0d073d802a4031a1572b91fe93fb0}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!SetElement@{SetElement}}
+\index{SetElement@{SetElement}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetElement()}{SetElement()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::Set\+Element (\begin{DoxyParamCaption}\item[{const T \&}]{d,  }\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+Method for inserting a single element into a matrix 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_matrix_a298e813bc3258c692e6aa69c2f68ee99}\label{class_matrix_a298e813bc3258c692e6aa69c2f68ee99}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename T1 $>$ \\
+std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T1 $>$ \&}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+The matrix input operator is overloaded 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/guwevfwbf\textquotesingle{}/2-\/курс/2-\/семестр/ООП/Лаба 2 семестр/Лаба 3/\+Lab\+\_\+3-\/\+Multithreaded-\/programming-\//Matrix.\+h\item 
+D\+:/guwevfwbf\textquotesingle{}/2-\/курс/2-\/семестр/ООП/Лаба 2 семестр/Лаба 3/\+Lab\+\_\+3-\/\+Multithreaded-\/programming-\//Matrix.\+cpp\end{DoxyCompactItemize}

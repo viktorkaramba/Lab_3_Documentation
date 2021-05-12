@@ -1,0 +1,90 @@
+\hypertarget{class_serial___version}{}\doxysection{Serial\+\_\+\+Version$<$ T $>$ Class Template Reference}
+\label{class_serial___version}\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Serial\+\_\+\+Version.\+h$>$}
+
+Inheritance diagram for Serial\+\_\+\+Version$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_serial___version}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_serial___version_a249f6c176095f76f856168e5c77c3ebb}{strassenR}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n) override
+\item 
+\mbox{\hyperlink{class_serial___version_ab450c0176ea8c7aabf3625d2d2bd2f35}{Serial\+\_\+\+Version}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n)
+\item 
+\mbox{\hyperlink{class_serial___version_ad8649fa73736ece9c48c75200351ba51}{Serial\+\_\+\+Version}} ()
+\item 
+void \mbox{\hyperlink{class_serial___version_aed0c844fa50c463eaa6cf4756bfe8cbe}{sum}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n) override
+\item 
+void \mbox{\hyperlink{class_serial___version_a833dbbb00b4959f5b58b97de0c20467d}{subtract}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Serial\+\_\+\+Version$<$ T $>$}
+
+Template class for the serial version of the algorithm 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_serial___version_ab450c0176ea8c7aabf3625d2d2bd2f35}\label{class_serial___version_ab450c0176ea8c7aabf3625d2d2bd2f35}} 
+\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}!Serial\_Version@{Serial\_Version}}
+\index{Serial\_Version@{Serial\_Version}!Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Serial\_Version()}{Serial\_Version()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}$<$ T $>$\+::\mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+A constructor that accepts two parameters \mbox{\Hypertarget{class_serial___version_ad8649fa73736ece9c48c75200351ba51}\label{class_serial___version_ad8649fa73736ece9c48c75200351ba51}} 
+\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}!Serial\_Version@{Serial\_Version}}
+\index{Serial\_Version@{Serial\_Version}!Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Serial\_Version()}{Serial\_Version()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}$<$ T $>$\+::\mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}}
+
+A constructor that does not accept input parameters 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial___version_a249f6c176095f76f856168e5c77c3ebb}\label{class_serial___version_a249f6c176095f76f856168e5c77c3ebb}} 
+\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}!strassenR@{strassenR}}
+\index{strassenR@{strassenR}!Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{strassenR()}{strassenR()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}$<$ T $>$\+::strassenR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method that implements the Strassen algorithm 
+
+Implements \mbox{\hyperlink{class_algorithm___strassen_a33be12f3d55d14a13b0d74b6ed7227d1}{Algorithm\+\_\+\+Strassen$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_serial___version_a833dbbb00b4959f5b58b97de0c20467d}\label{class_serial___version_a833dbbb00b4959f5b58b97de0c20467d}} 
+\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}!subtract@{subtract}}
+\index{subtract@{subtract}!Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}$<$ T $>$\+::subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method for subtracting matrices 
+
+Implements \mbox{\hyperlink{class_algorithm___strassen_af7fbec51221d97f197097b87715ae092}{Algorithm\+\_\+\+Strassen$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_serial___version_aed0c844fa50c463eaa6cf4756bfe8cbe}\label{class_serial___version_aed0c844fa50c463eaa6cf4756bfe8cbe}} 
+\index{Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}!sum@{sum}}
+\index{sum@{sum}!Serial\_Version$<$ T $>$@{Serial\_Version$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_serial___version}{Serial\+\_\+\+Version}}$<$ T $>$\+::sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Method for adding matrices 
+
+Implements \mbox{\hyperlink{class_algorithm___strassen_ad4c389aea5ba424a2e71e4a704f8e5fc}{Algorithm\+\_\+\+Strassen$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/guwevfwbf\textquotesingle{}/2-\/курс/2-\/семестр/ООП/Лаба 2 семестр/Лаба 3/\+Lab\+\_\+3-\/\+Multithreaded-\/programming-\//Serial\+\_\+\+Version.\+h\item 
+D\+:/guwevfwbf\textquotesingle{}/2-\/курс/2-\/семестр/ООП/Лаба 2 семестр/Лаба 3/\+Lab\+\_\+3-\/\+Multithreaded-\/programming-\//Serial\+\_\+\+Version.\+cpp\end{DoxyCompactItemize}

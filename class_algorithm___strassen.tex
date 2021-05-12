@@ -1,0 +1,68 @@
+\hypertarget{class_algorithm___strassen}{}\doxysection{Algorithm\+\_\+\+Strassen$<$ T $>$ Class Template Reference}
+\label{class_algorithm___strassen}\index{Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Algorithm\+\_\+\+Strassen.\+h$>$}
+
+Inheritance diagram for Algorithm\+\_\+\+Strassen$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_algorithm___strassen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_algorithm___strassen_a33be12f3d55d14a13b0d74b6ed7227d1}{strassenR}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n)=0
+\item 
+virtual void \mbox{\hyperlink{class_algorithm___strassen_ad4c389aea5ba424a2e71e4a704f8e5fc}{sum}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n)=0
+\item 
+virtual void \mbox{\hyperlink{class_algorithm___strassen_af7fbec51221d97f197097b87715ae092}{subtract}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&A, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&B, \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&C, int n)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Algorithm\+\_\+\+Strassen$<$ T $>$}
+
+A class hierarchy that defines the algorithms Strassen 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_algorithm___strassen_a33be12f3d55d14a13b0d74b6ed7227d1}\label{class_algorithm___strassen_a33be12f3d55d14a13b0d74b6ed7227d1}} 
+\index{Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}!strassenR@{strassenR}}
+\index{strassenR@{strassenR}!Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{strassenR()}{strassenR()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{class_algorithm___strassen}{Algorithm\+\_\+\+Strassen}}$<$ T $>$\+::strassenR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method that implements the Strassen algorithm 
+
+Implemented in \mbox{\hyperlink{class_serial___version_a249f6c176095f76f856168e5c77c3ebb}{Serial\+\_\+\+Version$<$ T $>$}}, and \mbox{\hyperlink{class_multithreaded___version_a99866f6ca8e2bcf6e97b10ed1d500f34}{Multithreaded\+\_\+\+Version$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_algorithm___strassen_af7fbec51221d97f197097b87715ae092}\label{class_algorithm___strassen_af7fbec51221d97f197097b87715ae092}} 
+\index{Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}!subtract@{subtract}}
+\index{subtract@{subtract}!Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{class_algorithm___strassen}{Algorithm\+\_\+\+Strassen}}$<$ T $>$\+::subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method for subtracting matrices 
+
+Implemented in \mbox{\hyperlink{class_serial___version_a833dbbb00b4959f5b58b97de0c20467d}{Serial\+\_\+\+Version$<$ T $>$}}, and \mbox{\hyperlink{class_multithreaded___version_ac3f0d10447965061d36fd3ac3ed0559e}{Multithreaded\+\_\+\+Version$<$ T $>$}}.
+
+\mbox{\Hypertarget{class_algorithm___strassen_ad4c389aea5ba424a2e71e4a704f8e5fc}\label{class_algorithm___strassen_ad4c389aea5ba424a2e71e4a704f8e5fc}} 
+\index{Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}!sum@{sum}}
+\index{sum@{sum}!Algorithm\_Strassen$<$ T $>$@{Algorithm\_Strassen$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{class_algorithm___strassen}{Algorithm\+\_\+\+Strassen}}$<$ T $>$\+::sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{C,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual method for adding matrices 
+
+Implemented in \mbox{\hyperlink{class_serial___version_aed0c844fa50c463eaa6cf4756bfe8cbe}{Serial\+\_\+\+Version$<$ T $>$}}, and \mbox{\hyperlink{class_multithreaded___version_a187e41baa6dc7a877919ab8204e58f1f}{Multithreaded\+\_\+\+Version$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/guwevfwbf\textquotesingle{}/2-\/курс/2-\/семестр/ООП/Лаба 2 семестр/Лаба 3/\+Lab\+\_\+3-\/\+Multithreaded-\/programming-\//Algorithm\+\_\+\+Strassen.\+h\end{DoxyCompactItemize}
