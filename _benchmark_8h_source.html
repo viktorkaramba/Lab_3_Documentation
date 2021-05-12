@@ -93,53 +93,52 @@ $(document).ready(function(){initNavTree('_benchmark_8h_source.html',''); initRe
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;std::vector&lt;float&gt; p1;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;std::vector&lt;float&gt; p2;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> Table(){</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">string</span> path = <span class="stringliteral">&quot;Table.txt&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    fstream fs;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    fs.open(path,fstream::in | fstream::out | fstream::app);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (!fs.is_open()) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;                              3            5             10           15           20         30          40         50&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_A = Tests_Matrix();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_B = Tests_Matrix();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_C1;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_C2;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_simple___timer.html">Simple_Timer</a> p_1 ;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            vecMatrix_C1.push_back(The_Product_Of_Matrices_Serial(vecMatrix_A[i], vecMatrix_B[i], count_row[i]));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            p_1.<a class="code" href="class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e">~Simple_Timer</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            p1.push_back(p_1.<a class="code" href="class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06">GetResult</a>());</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;Serial version            &quot;</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            fs&lt;&lt; p1[i] &lt;&lt; <span class="stringliteral">&quot;     &quot;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> Table(){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> path = <span class="stringliteral">&quot;Table.txt&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    fstream fs;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    fs.open(path,fstream::in | fstream::out | fstream::app);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (!fs.is_open()) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;                              3            5             10           15           20         30          40         50&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_A = Tests_Matrix();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_B = Tests_Matrix();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_C1;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::vector&lt;Matrix&lt;int&gt;&gt; vecMatrix_C2;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_simple___timer.html">Simple_Timer</a> p_1 ;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            vecMatrix_C1.push_back(The_Product_Of_Matrices_Serial(vecMatrix_A[i], vecMatrix_B[i], count_row[i]));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            p_1.<a class="code" href="class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e">~Simple_Timer</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            p1.push_back(p_1.<a class="code" href="class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06">GetResult</a>());</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;Serial version            &quot;</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="class_simple___timer.html">Simple_Timer</a> p_2;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            vecMatrix_C2.push_back(The_Product_Of_Matrices_Multithreaded_Version(vecMatrix_A[i], vecMatrix_B[i], count_row[i]));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            p_2.<a class="code" href="class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e">~Simple_Timer</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            p2.push_back(p_2.<a class="code" href="class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06">GetResult</a>());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Multi-threaded version    &quot;</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            fs &lt;&lt; p2[i] &lt;&lt; <span class="stringliteral">&quot;     &quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            fs&lt;&lt; p1[i] &lt;&lt; <span class="stringliteral">&quot;     &quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_simple___timer.html">Simple_Timer</a> p_2;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            vecMatrix_C2.push_back(The_Product_Of_Matrices_Multithreaded_Version(vecMatrix_A[i], vecMatrix_B[i], count_row[i]));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            p_2.<a class="code" href="class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e">~Simple_Timer</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            p2.push_back(p_2.<a class="code" href="class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06">GetResult</a>());</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>&lt;&lt;<span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="ttc" id="aclass_simple___timer_html"><div class="ttname"><a href="class_simple___timer.html">Simple_Timer</a></div><div class="ttdef"><b>Definition:</b> Simple_Timer.h:7</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Multi-threaded version    &quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; count_row.size(); i++)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            fs &lt;&lt; p2[i] &lt;&lt; <span class="stringliteral">&quot;     &quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        fs &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>&lt;&lt;<span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="ttc" id="aclass_simple___timer_html"><div class="ttname"><a href="class_simple___timer.html">Simple_Timer</a></div><div class="ttdoc">Simple timer Using for calculating the execution time of the algorithm.</div><div class="ttdef"><b>Definition:</b> Simple_Timer.h:11</div></div>
 <div class="ttc" id="aclass_simple___timer_html_a293e05cd08c7e3fba3cf909f06acbf06"><div class="ttname"><a href="class_simple___timer.html#a293e05cd08c7e3fba3cf909f06acbf06">Simple_Timer::GetResult</a></div><div class="ttdeci">float GetResult()</div><div class="ttdef"><b>Definition:</b> Simple_Timer.cpp:8</div></div>
 <div class="ttc" id="aclass_simple___timer_html_a4688c0da23bb3387a6973e425f253a7e"><div class="ttname"><a href="class_simple___timer.html#a4688c0da23bb3387a6973e425f253a7e">Simple_Timer::~Simple_Timer</a></div><div class="ttdeci">~Simple_Timer()</div><div class="ttdef"><b>Definition:</b> Simple_Timer.cpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
